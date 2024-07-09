@@ -8,7 +8,7 @@ const Skills = () => {
 
   return (
     <section
-      className="container flex h-screen  w-full flex-col gap-y-24 pt-14 dark:text-light"
+      className="container flex h-auto xl:h-screen  w-full flex-col gap-y-16 pt-14 dark:text-light"
       id="skills"
     >
       <div className="title">
@@ -17,8 +17,8 @@ const Skills = () => {
         </h2>
         <p className="text-[13px] font-medium opacity-60">Talents</p>
       </div>
-      <div className="skills-container flex w-full flex-wrap items-center justify-center gap-8">
-        <div className="skill-list flex aspect-square w-[500px] flex-col items-center justify-start gap-y-8">
+      <div className="skills-container flex w-full flex-wrap items-center justify-center gap-24 lg:gap-12 ">
+        <div className="skill-list flex w-[500px] flex-col items-center justify-start gap-y-8">
           <div className="skill">
             <h3 className="text-start text-lg font-semibold">HTML5 / CSS3</h3>
             <SkillBar percentage={95} />
@@ -40,7 +40,7 @@ const Skills = () => {
             <SkillBar percentage={80} />
           </div>
         </div>
-        <div className="skill-list flex aspect-square w-[500px] flex-col items-center justify-start gap-y-8">
+        <div className="skill-list flex max-md:aspect-square w-[500px] flex-col items-center justify-start gap-y-8">
           <div className="skill">
             <h3 className="text-start text-lg font-semibold">NodeJS</h3>
             <SkillBar percentage={75} />

@@ -43,7 +43,7 @@ const Header = () => {
           active={true}
           activeClass="active"
           spy={true}
-          offset={-50}
+          offset={-100}
           smooth={true}
           duration={500}
           to="home"
@@ -60,59 +60,59 @@ const Header = () => {
               to="home"
               activeClass="active"
               spy={true}
-              offset={-50}
+              offset={-80}
               smooth={true}
               duration={500}
             >
-              home
+              Home
             </Link>
           </li>
           <li className="nav-item">
             <Link
               activeClass="active"
               spy={true}
-              offset={-50}
+              offset={-80}
               smooth={true}
               duration={500}
               to="about"
             >
-              about
+              About
             </Link>
           </li>
           <li className="nav-item">
             <Link
               activeClass="active"
               spy={true}
-              offset={-50}
+              offset={-80}
               smooth={true}
               duration={500}
               to="skills"
             >
-              skills
+              Skills
             </Link>
           </li>
           <li className="nav-item">
             <Link
               activeClass="active"
               spy={true}
-              offset={-50}
+              offset={-80}
               smooth={true}
               duration={500}
               to="portfolio"
             >
-              portfolio
+              Portfolio
             </Link>
           </li>
           <li className="nav-item">
             <Link
               activeClass="active"
               spy={true}
-              offset={-50}
+              offset={-80}
               smooth={true}
               duration={500}
               to="contact"
             >
-              contact
+              Contact
             </Link>
           </li>
         </ul>

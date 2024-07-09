@@ -9,14 +9,14 @@ const About = () => {
   console.log(">>>>>>>>>>>", theme);
   return (
     <section
-      className="container h-screen w-full py-12 dark:text-light"
+      className="container h-auto lg:h-screen w-full py-12 dark:text-light"
       id="about"
     >
       <h2 className="text-center text-3xl font-bold">
         About <span className="text-purple">Me</span>
       </h2>
       <p className="text-[13px] font-medium opacity-60">My Introduction</p>
-      <div className="container mt-20 flex items-center justify-between gap-12">
+      <div className="container mt-20 flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="img flex-1">
           <LazyLoad height={200} offset={100}>
             <img
