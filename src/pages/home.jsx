@@ -5,24 +5,24 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="home w-full items-center gap-8 lg:container dark:text-light sm:flex md:h-[calc(100vh/3)] lg:h-[calc(100vh/2)] xl:h-dscreen "
+      className="home w-full items-center gap-8 lg:container dark:text-light md:flex md:h-[calc(100vh/2)] xl:h-dscreen "
     >
-      <div className="home__content__container container h-full items-center justify-start gap-y-10 sm:flex">
-        <div className="home__content w-full text-center max-sm:pt-32 sm:text-start md:w-1/2 pr-8 ">
-          <h1 className="mx-0 text-[2rem] font-bold uppercase lg:text-[4rem]">
+      <div className="home_content_container container h-full items-center justify-start gap-y-10 sm:flex">
+        <div className="home_content w-full text-center max-md:pt-24  md:text-start md:w-1/2 pr-8 ">
+          <h1 className="mx-0 text-[2rem] font-bold uppercase xl:text-[4rem]">
             makbel hailu
           </h1>
-          <h3 className="mx-0 text-[1rem] font-semibold uppercase lg:text-2xl">
+          <h3 className="mx-0 text-[1rem] font-semibold uppercase xl:text-2xl">
             i'm a full stack <span className="text-purple">developer</span>
           </h3>
-          <p className="my-4 text-center text-[.75rem] sm:text-start lg:text-sm">
+          <p className="my-4 text-center text-[.75rem] md:text-start xl:text-sm">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
             commodi deserunt quia odio similique laudantium, nisi perferendis
             sapiente vero provident? Quas explicabo odit cumque enim natus iste!
             At, quis sequi!
           </p>
 
-          <div className="buttons flex items-center gap-6 max-sm:justify-center">
+          <div className="buttons flex items-center gap-6 max-md:justify-center">
             <Link
               active={false}
               spy={true}
@@ -52,7 +52,7 @@ const Home = () => {
         </div>
         <img
           src={homeBg}
-          className="right-0 top-0 -z-[2] h-auto max-md:scale-150  max-sm:hidden  absolute md:w-[50%] "
+          className="home_img right-0 top-0 -z-[2] h-auto  max-md:hidden  absolute md:w-[50%] "
         />
       </div>
     </section>
