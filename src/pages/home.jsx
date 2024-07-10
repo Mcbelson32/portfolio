@@ -5,10 +5,10 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="home w-full items-center gap-8 lg:container dark:text-light sm:flex md:h-[calc(100vh/2)] lg:h-dscreen "
+      className="home w-full items-center gap-8 lg:container dark:text-light sm:flex md:h-[calc(100vh/3)] lg:h-[calc(100vh/2)] xl:h-dscreen "
     >
       <div className="home__content__container container h-full items-center justify-start gap-y-10 sm:flex">
-        <div className="home__content w-full text-center max-md:pt-32 sm:text-start md:w-1/2 pr-8 max-md:pr-12">
+        <div className="home__content w-full text-center max-sm:pt-32 sm:text-start md:w-1/2 pr-8 ">
           <h1 className="mx-0 text-[2rem] font-bold uppercase lg:text-[4rem]">
             makbel hailu
           </h1>
@@ -52,7 +52,7 @@ const Home = () => {
         </div>
         <img
           src={homeBg}
-          className="right-0 top-[300px] -z-[2] h-[calc(100vh/2)] max-md:scale-150 max-md:w-[80%] max-sm:hidden sm:top-0 md:absolute md:w-[50%] lg:h-dscreen"
+          className="right-0 top-0 -z-[2] h-auto max-md:scale-150  max-sm:hidden  absolute md:w-[50%] "
         />
       </div>
     </section>

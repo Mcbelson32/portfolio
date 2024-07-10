@@ -5,6 +5,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        'xs': "480px",
+        sm': "640px",
+      },
       colors: {
         primary: "#E5DEED",
         secondary: "#16022D",
