@@ -31,7 +31,7 @@ const Home = () => {
               duration={500}
               to="contact"
             >
-              <button className="btn rounded-full border-0 bg-gradient-45 text-light hover:bg-gradient-225 dark:hover:text-light">
+              <button className="btn rounded-xl border-0 bg-gradient-45 text-light hover:bg-gradient-225 dark:hover:text-light">
                 contact me
               </button>
             </Link>
@@ -44,7 +44,7 @@ const Home = () => {
               duration={500}
               to="portfolio"
             >
-              <button className="btn rounded-full border-2 bg-transparent  text-dark hover:text-light dark:border-light dark:text-light dark:hover:bg-light dark:hover:text-dark">
+              <button className="btn rounded-xl border-2 bg-transparent  text-dark hover:text-light dark:border-light dark:text-light dark:hover:bg-light dark:hover:text-dark">
                 portfolios
               </button>
             </Link>
