@@ -9,7 +9,7 @@ const About = () => {
   console.log(">>>>>>>>>>>", theme);
   return (
     <section
-      className="container h-auto lg:h-screen w-full py-32 md:py-24 lg:py-32 xl:py-12 dark:text-light"
+      className="container h-auto xl:h-screen w-full py-20 2xl:py-32 dark:text-light"
       id="about"
     >
       <h2 className="text-center text-3xl font-bold">

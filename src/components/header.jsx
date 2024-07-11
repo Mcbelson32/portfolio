@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <header
-      className={`container lg:w-[90%] py-2 rounded-lg fixed left-1/2 top-5 z-50 flex -translate-x-1/2 items-center justify-between px-10 text-center dark:text-light md:px-8 xl:px-6 ${isScrolled > 100 ? "light-glass dark:dark-glass" : ""}`}
+      className={`container max-xl:w-[90%] py-2 rounded-lg fixed left-1/2 top-5 z-50 flex -translate-x-1/2 items-center justify-between px-10 text-center dark:text-light md:px-8 xl:px-6 ${isScrolled > 100 ? "light-glass dark:dark-glass" : ""}`}
       id="header"
     >
       <div className="logo">
@@ -147,7 +147,7 @@ const Header = () => {
 
           {/* moon icon */}
           <svg
-            className="swap-off h-7 w-7 fill-current md:text-light 2xl:text-dark"
+            className={`swap-off h-7 w-7 fill-current md:text-light 2xl:text-dark ${isScrolled > 100 ? "md:text-dark" : ""}`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >

@@ -8,7 +8,7 @@ const Skills = () => {
 
   return (
     <section
-      className="container flex h-auto xl:h-screen  w-full flex-col gap-y-16 pt-14 dark:text-light max-xl:pb-32"
+      className="container flex h-auto xl:h-screen  w-full flex-col gap-y-16 pt-14 dark:text-light "
       id="skills"
     >
       <div className="title">

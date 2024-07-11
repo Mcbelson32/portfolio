@@ -5,10 +5,10 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="home w-full items-center max-md:text-center gap-8 lg:container dark:text-light md:flex md:h-[calc(100vh/2)] xl:h-dscreen "
+      className="home w-full items-center max-md:text-center gap-8 lg:container dark:text-light md:flex md:h-[500px] xl:h-[800px] 2xl:h-dscreen "
     >
       <div className="home_content_container container h-full items-center justify-start gap-y-10 sm:flex">
-        <div className="home_content w-full text-center max-md:pt-24  md:text-start md:w-1/2 sm:px-12 md:px-0 md:pr-8 ">
+        <div className="home_content w-full text-center max-md:pt-24 md:text-start md:w-1/2 sm:px-12 md:px-0 md:pr-8 ">
           <h1 className="mx-0 text-[2rem] font-bold uppercase xl:text-[4rem]">
             makbel hailu
           </h1>
