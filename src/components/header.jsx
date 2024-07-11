@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 // import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
 
@@ -9,6 +9,12 @@ const Header = () => {
   const isDark = useSelector((state) => state.theme.isDark);
   console.log(">", isDark);
   const dispatch = useDispatch();
+  const [isScrolled, setIsScrolled] = useState(0);
+
+  const handleScroll = () => {
+    let position = window.pageYOffset;
+    setIsScrolled(position);
+  };
 
   const toggleTheme = () => {
     let currentTheme = !isDark;
@@ -21,7 +27,7 @@ const Header = () => {
   useEffect(() => {
     const userTheme = localStorage.getItem("theme");
     const systemTheme = window.matchMedia(
-      "(prefers-color-scheme: dark)",
+      "(prefers-color-scheme: dark)"
     ).matches;
 
     if (userTheme === "dark") {
@@ -30,12 +36,16 @@ const Header = () => {
     } else {
       dispatch(changeTheme(false));
     }
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
     <header
-      className="container fixed left-1/2 top-5 z-50 flex -translate-x-1/2 items-center justify-between px-10 text-center dark:text-light 
-            md:px-8 xl:px-6 "
+      className={`container lg:w-[90%] py-2 rounded-lg fixed left-1/2 top-5 z-50 flex -translate-x-1/2 items-center justify-between px-10 text-center dark:text-light md:px-8 xl:px-6 ${isScrolled > 100 ? "light-glass dark:dark-glass" : ""}`}
       id="header"
     >
       <div className="logo">
@@ -137,7 +147,7 @@ const Header = () => {
 
           {/* moon icon */}
           <svg
-            className="swap-off h-7 w-7 fill-current lg:text-light xl:text-dark"
+            className="swap-off h-7 w-7 fill-current md:text-light 2xl:text-dark"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >

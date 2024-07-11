@@ -65,7 +65,13 @@ li {
   list-style: none;
 }
 .nav-item a {
+  color: #3e3447;
+  font-weight: 500;
+}
+
+.dark .nav-item a {
   color: #d1acf8;
+  font-weight: 500;
 }
 
 .nav-item a.active {

@@ -9,14 +9,14 @@ const About = () => {
   console.log(">>>>>>>>>>>", theme);
   return (
     <section
-      className="container h-auto lg:h-screen w-full py-12 dark:text-light"
+      className="container h-auto lg:h-screen w-full py-32 md:py-24 lg:py-32 xl:py-12 dark:text-light"
       id="about"
     >
       <h2 className="text-center text-3xl font-bold">
         About <span className="text-purple">Me</span>
       </h2>
       <p className="text-[13px] font-medium opacity-60">My Introduction</p>
-      <div className="container mt-20 flex flex-col lg:flex-row items-center justify-between gap-12">
+      <div className="container mt-20 flex flex-col md:flex-row items-center justify-between gap-12">
         <div className="img flex-1">
           <LazyLoad height={200} offset={100}>
             <img
@@ -28,13 +28,13 @@ const About = () => {
             />
           </LazyLoad>
         </div>
-        <div className="about__contents flex flex-1 flex-col items-start justify-center gap-y-8">
-          <div className="cards flex items-center justify-between gap-x-8 ">
-            <div className="card h-32 w-32 bg-[#CBBDDB] text-center dark:border-2 dark:border-primary dark:bg-secondary-dark"></div>
-            <div className="card h-32 w-32 bg-[#CBBDDB] text-center dark:border-2 dark:border-primary dark:bg-secondary-dark"></div>
-            <div className="card h-32 w-32 bg-[#CBBDDB] text-center dark:border-2 dark:border-primary dark:bg-secondary-dark"></div>
+        <div className="about__contents flex flex-1 flex-col items-center md:items-start justify-center gap-y-8">
+          <div className="cards flex items-center justify-center md:justify-start gap-x-8 ">
+            <div className="card aspect-square w-24 lg:w-32  bg-[#CBBDDB] text-center dark:border-2 dark:border-primary dark:bg-secondary-dark"></div>
+            <div className="card aspect-square w-24 lg:w-32  bg-[#CBBDDB] text-center dark:border-2 dark:border-primary dark:bg-secondary-dark"></div>
+            <div className="card aspect-square w-24 lg:w-32  bg-[#CBBDDB] text-center dark:border-2 dark:border-primary dark:bg-secondary-dark"></div>
           </div>
-          <div className="content text-start">
+          <div className="content text-center md:text-start text-sm">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
               eaque necessitatibus eius corrupti fugiat deleniti culpa deserunt
@@ -45,7 +45,7 @@ const About = () => {
               praesentium reprehenderit laborum?
             </p>
           </div>
-          <button className="flex items-center gap-x-1 rounded-lg border-[2px] border-dark bg-dark bg-none px-3 py-3 text-light hover:bg-transparent hover:text-dark  dark:hover:bg-light">
+          <button className="flex w-44 items-center gap-x-1 rounded-lg border-[2px] border-dark bg-dark bg-none px-3 py-3 text-light hover:bg-transparent hover:text-dark  dark:hover:bg-light">
             view certificate <FaAngleRight className="text-lg" />
           </button>
         </div>
