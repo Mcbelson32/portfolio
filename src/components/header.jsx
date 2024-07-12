@@ -45,7 +45,7 @@ const Header = () => {
 
   return (
     <header
-      className={`container max-xl:w-[90%] py-2 rounded-lg fixed left-1/2 top-5 z-50 flex -translate-x-1/2 items-center justify-between px-10 text-center dark:text-light md:px-8 xl:px-6 ${isScrolled > 100 ? "light-glass dark:dark-glass" : ""}`}
+      className={`container max-xl:w-[90%] py-2 rounded-lg fixed left-1/2 top-5 z-50 flex -translate-x-1/2 items-center justify-between px-10 text-center dark:text-light md:px-8 xl:px-6 transition-colors ${isScrolled > 100 ? "light-glass dark:dark-glass " : ""}`}
       id="header"
     >
       <div className="logo">
