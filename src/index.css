@@ -200,7 +200,26 @@ li {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
+/* form */
 
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: start;
+  margin-block-end: 1rem;
+}
+.input-field {
+  width: 100%;
+  @apply rounded-md;
+  @apply py-2;
+  @apply px-4;
+  background: #e0e0e0;
+  box-shadow:
+    inset 24px 24px 54px #c1c1c1,
+    inset -24px -24px 54px #ffffff;
+}
 @media screen and (max-width: 768px) {
   .home {
     margin-bottom: 2rem;
