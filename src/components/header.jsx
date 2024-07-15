@@ -123,7 +123,7 @@ const Header = () => {
               active="false"
               activeClass="active"
               spy={true}
-              offset={-50}
+              offset={-30}
               smooth={true}
               duration={500}
               to="contact"
