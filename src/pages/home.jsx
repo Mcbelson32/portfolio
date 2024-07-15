@@ -34,7 +34,7 @@ const Home = () => {
             <Link
               active={false}
               spy={true}
-              offset={10}
+              offset={20}
               smooth={true}
               duration={500}
               to="contact"
