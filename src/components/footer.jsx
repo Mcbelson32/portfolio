@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <footer className="contatiner bg-purple rounded-t-2xl mt-8 text-white">
+    <footer className="contatiner bg-purple rounded-t-2xl mt-32 text-white">
       <div className="w-full flex flex-wrap justify-around items-center pt-6 pb-4">
         <div>
           <Link

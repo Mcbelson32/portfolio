@@ -35,7 +35,7 @@ const Portfolio = () => {
   ];
   return (
     <section
-      className="md:container h-auto my-32 xl:my-0 xl:h-screen w-full flex flex-col justify-center items-center dark:text-light"
+      className="md:container h-auto my-32 2xl:my-0 xl:h-screen w-full flex flex-col justify-center items-center dark:text-light"
       id="portfolio"
     >
       <h2 className="text-center text-3xl font-bold">

@@ -16,6 +16,7 @@
   font-family: "Poppins", sans-serif;
   transition: all 0.5s ease-in-out;
   /* border: 1px solid red; */
+
 }
 
 :root {
@@ -207,7 +208,7 @@ li {
   flex-direction: column;
   gap: 0.25rem;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   margin-block-end: 1rem;
 }
 .input-field {
