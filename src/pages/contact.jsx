@@ -55,19 +55,19 @@ const Contact = ({width}) => {
               <BiMailSend className="text-3xl mb-3"/>
               <h3 className="text-sm">Email</h3>
               <p className="text-xs opacity-75 font-semibold">mcwelson92@gmail.com</p>
-              <a href="mailto:mcwelson92@gmail.com" className="text-xs opacity-75 font-semibold mt-4 w-full flex text-center justify-center items-center">Write me <TiArrowRight /></a>
+              <a href="mailto:mcwelson92@gmail.com" target="blank" className="text-xs opacity-75 font-semibold mt-4 w-full flex text-center justify-center items-center">Write me <TiArrowRight /></a>
           </div>
           <div className="card aspect-video w-72 bg-[#d5ccdd] text-center font-bold p-4 flex flex-col justify-start gap-1 items-center dark:border-2 dark:border-primary dark:bg-secondary-dark">
           <FaWhatsapp className="text-3xl mb-3"/>
               <h3 className="text-sm">Whatsapp</h3>
               <p className="text-xs opacity-75 font-semibold">+251-904-537-541</p>
-              <a href="https://wa.me/251904537541" className="text-xs opacity-75 font-semibold mt-4 w-full flex text-center justify-center items-center">Write me <TiArrowRight /></a>
+              <a href="https://wa.me/251904537541" target="blank" className="text-xs opacity-75 font-semibold mt-4 w-full flex text-center justify-center items-center">Write me <TiArrowRight /></a>
           </div>
           <div className="card aspect-video w-72  bg-[#d5ccdd] text-center font-bold p-4 flex flex-col justify-start gap-1 items-center dark:border-2 dark:border-primary dark:bg-secondary-dark">
           <FiLinkedin className="text-3xl mb-3"/>
               <h3 className="text-sm">LinkedIn</h3>
               <p className="text-xs opacity-75 font-semibold">Makbel Hailu</p>
-              <a href="https://www.linkedin.com/in/makbel-hailu-bab1571a2" className="text-xs opacity-75 font-semibold mt-4 w-full flex text-center justify-center items-center">Write me <TiArrowRight /></a>
+              <a href="https://www.linkedin.com/in/makbel-hailu-bab1571a2" target="blank" className="text-xs opacity-75 font-semibold mt-4 w-full flex text-center justify-center items-center">Write me <TiArrowRight /></a>
           </div>
         </div>
         <div data-aos={width > 1024 ? "fade-left" : "fade-up"} className="form-card2 lg:px-5">
