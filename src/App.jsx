@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 import Header from "./components/header";
 import SmallNave from "./components/small-nav";
@@ -12,7 +14,19 @@ import Skills from "./pages/skill";
 import Portfolio from "./pages/portfolio";
 import Contact from "./pages/contact";
 
+
 function App() {
+  
+  AOS.init({ 
+    offset: 120, 
+    delay: 1000, 
+    duration: 400, 
+    easing: 'ease', 
+    once: true, 
+    mirror: true, 
+    anchorPlacement: 'top-bottom'
+   });
+
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {

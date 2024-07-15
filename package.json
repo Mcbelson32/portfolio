@@ -13,6 +13,7 @@
     "@emailjs/browser": "^4.4.1",
     "@gsap/react": "^2.0.2",
     "@reduxjs/toolkit": "^2.0.1",
+    "aos": "^2.3.4",
     "caniuse-lite": "^1.0.30001641",
     "gsap": "^3.12.4",
     "preact-skillbar": "^1.0.0",
@@ -23,8 +24,7 @@
     "react-lazyload": "^3.2.0",
     "react-redux": "^9.1.0",
     "react-scroll": "^1.9.0",
-    "redux": "^5.0.1",
-    "scrollreveal": "^4.0.9"
+    "redux": "^5.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

@@ -22,7 +22,7 @@ const Home = () => {
             At, quis sequi!
           </p>
 
-          <div className="buttons flex items-center gap-6 max-md:justify-center">
+          <div data-aos="fade-up" className="buttons flex items-center gap-6 max-md:justify-center">
             <Link
               active={false}
               spy={true}
