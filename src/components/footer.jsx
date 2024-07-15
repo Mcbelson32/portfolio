@@ -1,6 +1,10 @@
 import React from "react";
 import { Link } from "react-scroll";
 
+import { BiMailSend } from "react-icons/bi";
+import { FaWhatsapp } from "react-icons/fa";
+import { FiLinkedin } from "react-icons/fi";
+
 const Footer = () => {
   return (
     <footer className="contatiner bg-purple rounded-t-2xl mt-32 text-white">
@@ -20,7 +24,7 @@ const Footer = () => {
           </Link>
         </div>
         <div>
-          <ul className="flex w-full flex-wrap items-center gap-x-10 text text-sm lg:gap-x-14 lg:text-base">
+          <ul className="flex w-full flex-wrap flex-col  sm:flex-row items-center gap-x-10 gap-y-3 font-semibold text-sm lg:gap-x-14 lg:text-base">
             <li>
               <Link
                 to="home"
@@ -77,6 +81,11 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
+        </div>
+        <div className="max-md:w-full flex justify-center items-center gap-x-6 text-2xl my-6">
+          <a href="mailto:mcwelson92@gmail.com"><BiMailSend /></a>
+          <a href="https://wa.me/251904537541"><FaWhatsapp /></a>
+          <a href="https://www.linkedin.com/in/makbel-hailu-bab1571a2"><FiLinkedin /></a>
         </div>
       </div>
       <hr className="w-[90%] mx-auto bg-primary  " />

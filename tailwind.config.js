@@ -14,12 +14,12 @@ export default {
       //   "2xl": "1400px",
       // },
       colors: {
-        primary: "#E5DEED",
+        primary: "#f7f3fa",
         secondary: "#16022D",
         "secondary-dark": "#110025",
         light: "#EEEEEE",
         dark: "#090113",
-        purple: "#7B00FF",
+        purple: "#5c02bd",
       },
       width: {
         dscreen: "100dvw",

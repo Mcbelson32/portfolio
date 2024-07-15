@@ -35,6 +35,7 @@ html {
 
 body {
   width: 100%;
+  height:auto;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -202,6 +203,10 @@ li {
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 /* form */
+input:focus,
+textarea:focus {
+  outline: none;
+}
 
 .form-field {
   display: flex;
@@ -211,16 +216,34 @@ li {
   align-items: flex-start;
   margin-block-end: 1rem;
 }
+.dark .input-field {
+  width: 100%;
+  max-width: 500px;
+  @apply rounded-md;
+  @apply mx-auto;
+  @apply py-2;
+  @apply px-4;
+  background: #16022D;
+  box-shadow:
+    inset 24px 24px 54px #1b003a,
+    inset -24px -24px 54px rgb(54, 1, 116);
+}
 .input-field {
   width: 100%;
+  max-width: 500px;
+  @apply mx-auto;
   @apply rounded-md;
   @apply py-2;
   @apply px-4;
-  background: #e0e0e0;
+
+  background: #f1edf5;
   box-shadow:
-    inset 24px 24px 54px #c1c1c1,
-    inset -24px -24px 54px #ffffff;
+    inset 14px 14px 54px #cfcece,
+    inset -14px -14px 54px #f7f3fa,
+    3px 3px 10px #bdbcbc;
+    
 }
+
 @media screen and (max-width: 768px) {
   .home {
     margin-bottom: 2rem;
@@ -271,3 +294,12 @@ li {
     align-self: center;
   }
 }
+
+/* @media screen and (min-width: 540px) and (max-width: 768px) {
+  label {
+    width:100%;
+    max-width: 500px;
+    @apply mx-auto;
+    text-align: start;
+  }
+} */

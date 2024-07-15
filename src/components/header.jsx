@@ -7,18 +7,19 @@ import { changeTheme } from "../features/theme/themeSlice";
 
 const Header = () => {
   const isDark = useSelector((state) => state.theme.isDark);
-  console.log(">", isDark);
+  
   const dispatch = useDispatch();
   const [isScrolled, setIsScrolled] = useState(0);
 
   const handleScroll = () => {
     let position = window.pageYOffset;
     setIsScrolled(position);
+    
   };
 
   const toggleTheme = () => {
     let currentTheme = !isDark;
-    console.log(">", !isDark);
+
     dispatch(changeTheme());
     localStorage.setItem("theme", currentTheme ? "dark" : "light");
     document.documentElement.classList.toggle("dark");
@@ -45,12 +46,12 @@ const Header = () => {
 
   return (
     <header
-      className={`container max-xl:w-[90%] py-2 rounded-lg fixed left-1/2 top-5 z-50 flex -translate-x-1/2 items-center justify-between px-10 text-center dark:text-light md:px-8 xl:px-6 transition-colors ${isScrolled > 100 ? "light-glass dark:dark-glass " : ""}`}
+      className={`container max-xl:w-[90%] py-2 rounded-lg fixed left-1/2 top-5 z-50 flex -translate-x-1/2 items-center justify-between px-10 text-center dark:text-light md:px-8 xl:px-6 transition-colors ${isScrolled > 100 ? "light-glass dark:dark-glass text-dark" : ""}`}
       id="header"
     >
       <div className="logo">
         <Link
-          active={true}
+          active="true"
           activeClass="active"
           spy={true}
           offset={-100}
@@ -67,6 +68,7 @@ const Header = () => {
         <ul className="flex w-full items-center gap-x-10  text-sm lg:gap-x-14 lg:text-base">
           <li className="nav-item">
             <Link
+              active="false"
               to="home"
               activeClass="active"
               spy={true}
@@ -79,6 +81,7 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
+              active="false"
               activeClass="active"
               spy={true}
               offset={-80}
@@ -91,6 +94,7 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
+            active="false"
               activeClass="active"
               spy={true}
               offset={-80}
@@ -103,6 +107,7 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
+            active="false"
               activeClass="active"
               spy={true}
               offset={-80}
@@ -115,6 +120,7 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
+              active="false"
               activeClass="active"
               spy={true}
               offset={-80}
@@ -147,7 +153,7 @@ const Header = () => {
 
           {/* moon icon */}
           <svg
-            className={`swap-off h-7 w-7 fill-current md:text-light 2xl:text-dark ${isScrolled > 100 ? "md:text-dark" : ""}`}
+            className={`swap-off h-7 w-7 fill-current  2xl:text-dark ${isScrolled > 560 ? "md:text-dark" : "md:text-light"}`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
