@@ -16,22 +16,33 @@ import Contact from "./pages/contact";
 
 
 function App() {
-  
-  AOS.init({ 
-    offset: 120, 
-    delay: 1000, 
-    duration: 400, 
-    easing: 'ease', 
-    once: true, 
-    mirror: true, 
-    anchorPlacement: 'top-bottom'
-   });
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
+
+    AOS.init({ 
+      offset: 80,
+      duration: 1500, 
+      easing: 'ease-in-out', 
+     });
   }, []);
   return (
     <>
@@ -40,9 +51,9 @@ function App() {
       <SmallNave />
       <Home />
       <About />
-      <Skills />
+      <Skills width={windowWidth} />
       <Portfolio />
-      <Contact />
+      <Contact width={windowWidth} />
       <Footer />
     </>
   );

@@ -1,5 +1,6 @@
 import homeBg from "../assets/img/bg.svg";
 import { Link, animateScroll as scroll } from "react-scroll";
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
   return (
@@ -9,20 +10,27 @@ const Home = () => {
     >
       <div className="home_content_container container h-full items-center justify-start gap-y-10 sm:flex">
         <div className="home_content w-full text-center max-md:pt-24 md:text-start md:w-1/2 sm:px-12 md:px-0 md:pr-8 ">
-          <h1 className="mx-0 text-[2rem] font-bold uppercase xl:text-[4rem]">
+          <h1 data-aos="fade-right" data-aos-delay="1000" className="mx-0 text-[2rem] font-bold uppercase xl:text-[4rem]">
             makbel hailu
           </h1>
-          <h3 className="mx-0 text-[1rem] font-semibold uppercase xl:text-2xl">
-            i'm a full stack <span className="text-purple">developer</span>
+          <h3 data-aos="fade-right" data-aos-delay="1000" className="flex items-center max-md:justify-center gap-x-2 mx-0 text-[1rem] font-semibold uppercase xl:text-2xl">
+            <span>i'm a </span>
+            <span className="text-purple">
+              <Typewriter
+              className="inline"
+                options={{
+                  strings: ['FullStack Developer', 'UI/UX Designer', 'Programmer'],
+                  autoStart: true,
+                  loop: true,
+                }}
+            />
+            </span>
           </h3>
-          <p className="my-4 text-center text-[.75rem] md:text-start xl:text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-            commodi deserunt quia odio similique laudantium, nisi perferendis
-            sapiente vero provident? Quas explicabo odit cumque enim natus iste!
-            At, quis sequi!
+          <p data-aos="fade-right" data-aos-delay="1000" className="my-4 text-center text-[.75rem] md:text-start xl:text-sm">
+          A full stack developer and UI/UX designer. Proficient in MERN, Django, React Native, and PHP, I create seamless and dynamic digital experiences. With a strong foundation in both frontend and backend technologies, I deliver high-quality, user-centered solutions that bring innovative ideas to life.
           </p>
 
-          <div data-aos="fade-up" className="buttons flex items-center gap-6 max-md:justify-center">
+          <div data-aos="fade-up" data-aos-delay="1000" className="buttons flex items-center gap-6 max-md:justify-center">
             <Link
               active={false}
               spy={true}

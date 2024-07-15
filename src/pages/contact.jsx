@@ -10,7 +10,7 @@ import emailjs from '@emailjs/browser';
 // service = service_y2bzdql
 // temp = template_eps1636
 
-const Contact = () => {
+const Contact = ({width}) => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [subject, setSubject] = useState("")
@@ -44,12 +44,12 @@ const Contact = () => {
       className="container max-md:pr-0 max-md:pl-0 h-auto xl:h-screen w-full py-20 2xl:py-32 dark:text-light"
       id="contact"
     >
-      <h2 className="text-center text-3xl font-bold">
+      <h2 data-aos="fade-up" className="text-center text-3xl font-bold">
         Contact <span className="text-purple">Me</span>
       </h2>
-      <p className="text-[13px] font-medium opacity-60">Get In Touch</p>
+      <p data-aos="fade-up" className="text-[13px] font-medium opacity-60">Get In Touch</p>
       <div className="form-card1 mt-8 px-0 lg:px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div className="flex flex-col gap-4 items-center justify-start">
+        <div data-aos={width > 1024 ? "fade-right" : "fade-up"} className="flex flex-col gap-4 items-center justify-start">
           <h2 className="text-lg font-semibold w-full text-center my-4">Talk to me</h2>
           <div className="card aspect-video w-72  bg-[#d5ccdd] text-center font-bold py-4 px-3 flex flex-col justify-start gap-1 items-center dark:border-2 dark:border-primary dark:bg-secondary-dark">
               <BiMailSend className="text-3xl mb-3"/>
@@ -70,7 +70,7 @@ const Contact = () => {
               <a href="https://www.linkedin.com/in/makbel-hailu-bab1571a2" className="text-xs opacity-75 font-semibold mt-4 w-full flex text-center justify-center items-center">Write me <TiArrowRight /></a>
           </div>
         </div>
-        <div className="form-card2 lg:px-5">
+        <div data-aos={width > 1024 ? "fade-left" : "fade-up"} className="form-card2 lg:px-5">
           <h2 className="text-lg font-semibold w-full text-center my-4">Write me your project</h2>
           <form className="form w-full" method="POST" onSubmit={handleForm}>
             <div className="form-field ">

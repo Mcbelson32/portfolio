@@ -3,7 +3,7 @@ import { BsFillArrowUpRightCircleFill } from "react-icons/bs";
 
 const Card = ({ img, name, type, link }) => {
   return (
-    <div className="max-w-96 w-full md:w-80 lg:w-[300px] xl:w-80 h-auto rounded-2xl">
+    <div data-aos="zoom-in" className="max-w-96 w-full md:w-80 lg:w-[300px] xl:w-80 h-auto rounded-2xl">
       <img
         src={img}
         alt="project Image"

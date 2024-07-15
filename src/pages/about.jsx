@@ -13,6 +13,8 @@ const About = () => {
  
   return (
     <section
+    data-aos="fade-up" 
+    data-aos-delay="0"
       className="container h-auto xl:h-screen w-full py-20 2xl:py-32 dark:text-light"
       id="about"
     >
@@ -34,31 +36,25 @@ const About = () => {
         </div>
         <div className="about__contents flex flex-1 flex-col items-center md:items-start justify-center gap-y-8">
           <div className="cards flex items-center justify-center md:justify-start gap-x-8 ">
-            <div className="card aspect-video w-24 lg:w-32  bg-[#d5ccdd] text-center font-bold p-4 flex felx-col justify-start gap-1 items-center dark:border-2 dark:border-primary dark:bg-secondary-dark">
+            <div data-aos="fade-right" className="card aspect-video w-24 lg:w-32  bg-[#d5ccdd] text-center font-bold p-4 flex flex-col justify-start sm:gap-1 items-center dark:border-2 dark:border-primary dark:bg-secondary-dark">
               <PiMedalDuotone className="text-3xl mb-3"/>
               <h3 className="text-sm">Experiance</h3>
-              <p className="text-xs opacity-75 font-semibold">3 + Years</p>
+              <p className="text-[10px] lg:text-xs opacity-75 font-semibold">3 + Years</p>
             </div>
-            <div className="card aspect-video w-24 lg:w-32  bg-[#d5ccdd] text-center font-bold p-4 flex felx-col justify-start gap-1 items-center dark:border-2 dark:border-primary dark:bg-secondary-dark">
+            <div data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000" className="card aspect-video w-24 lg:w-32  bg-[#d5ccdd] text-center font-bold p-4 flex flex-col justify-start gap-1 items-center dark:border-2 dark:border-primary dark:bg-secondary-dark">
             <FiBriefcase className="text-3xl mb-3"/>
               <h3 className="text-sm">Completed</h3>
-              <p className="text-xs opacity-75 font-semibold">5 + Projects</p>
+              <p className="text-[10px] lg:text-xs opacity-75 font-semibold">5 + Projects</p>
             </div>
-            <div className="card aspect-video w-24 lg:w-32  bg-[#d5ccdd] text-center font-bold p-4 flex felx-col justify-start gap-1 items-center dark:border-2 dark:border-primary dark:bg-secondary-dark">
+            <div data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000" className="card aspect-video w-24 lg:w-32  bg-[#d5ccdd] text-center font-bold p-4 flex flex-col justify-start gap-1 items-center dark:border-2 dark:border-primary dark:bg-secondary-dark">
             <PiHeadsetFill className="text-3xl mb-3"/>
               <h3 className="text-sm">Support</h3>
-              <p className="text-xs opacity-75 font-semibold">Online 24/7</p>
+              <p className="text-[10px] lg:text-xs opacity-75 font-semibold">Online 24/7</p>
             </div>
           </div>
           <div className="content text-center md:text-start text-sm">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-              eaque necessitatibus eius corrupti fugiat deleniti culpa deserunt
-              unde et dolorum sunt, aut ab quia nam quae. Libero at quasi qui!
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
-              fugiat tenetur nobis modi qui impedit earum velit consequuntur
-              deserunt eligendi culpa veritatis, vitae aperiam quas quos. Earum
-              praesentium reprehenderit laborum?
+            <p >
+            Hello! I'm Makbel Hailu, a versatile full stack developer, UI/UX designer, and programmer. With a passion for creating seamless digital experiences, I specialize in crafting intuitive and visually appealing user interfaces, backed by robust and efficient backend solutions. My expertise spans across various programming languages and frameworks, enabling me to bring innovative ideas to life from concept to completion. I thrive in dynamic environments where I can continuously learn and adapt, ensuring that my skills remain at the cutting edge of technology. Whether working on a complex application or a simple website, my goal is to deliver high-quality, user-centered solutions that exceed expectations.
             </p>
           </div>
           <button className="flex w-44 items-center gap-x-1 rounded-lg border-[2px] border-dark bg-dark bg-none px-3 py-3 text-light hover:bg-transparent hover:text-dark  dark:hover:bg-light">
