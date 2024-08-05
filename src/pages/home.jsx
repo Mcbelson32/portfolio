@@ -19,7 +19,7 @@ const Home = () => {
               <Typewriter
               className="inline"
                 options={{
-                  strings: ['FullStack Developer', 'UI/UX Designer', 'Programmer'],
+                  strings: ['Full Stack Developer', 'UI/UX Designer', 'Programmer'],
                   autoStart: true,
                   loop: true,
                 }}
