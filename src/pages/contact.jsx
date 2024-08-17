@@ -41,7 +41,7 @@ const Contact = ({width}) => {
   }
   return (
     <section
-      className="container max-md:pr-0 max-md:pl-0 h-auto xl:h-screen w-full py-20 2xl:py-32 dark:text-light"
+      className="container max-md:pr-0 max-md:pl-0 h-auto xl:h-screen w-full py-20 2xl:py-32 mb-8 dark:text-light"
       id="contact"
     >
       <h2 data-aos="fade-up" className="text-center text-3xl font-bold">
