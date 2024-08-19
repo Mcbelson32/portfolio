@@ -15,9 +15,12 @@ const Contact = ({width}) => {
   const [email, setEmail] = useState("")
   const [subject, setSubject] = useState("")
   const [message, setMessage] = useState("")
+  const [isSending, setIsSending] = useState(false)
 
   const handleForm = (e) => {
+    setIsSending(true)
     e.preventDefault()
+    
 
     const tempParams = {
       from_name: name,
@@ -34,6 +37,7 @@ const Contact = ({width}) => {
         setEmail("")
         setSubject("")
         setMessage("")
+        setIsSending(false)
       }).catch((err) => {
         console.error("Error Sending Email", err)
         alert("Error Sending Email")
@@ -130,7 +134,7 @@ const Contact = ({width}) => {
               ></textarea>
             </div>
 
-            <button className="w-full max-w-[500px] btn bg-purple text-white border-0 dark:border-white hover:bg-secondary dark:hover:border-2">
+            <button className="w-full max-w-[500px] btn bg-purple text-white border-0 dark:border-white hover:bg-secondary dark:hover:border-2" disabled={isSending}>
               Send Message
             </button>
           </form>
