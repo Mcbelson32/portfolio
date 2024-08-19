@@ -236,7 +236,7 @@ textarea:focus {
   @apply py-2;
   @apply px-4;
 
-  background: #f1edf5;
+  background: hsl(208, 50%, 50%, 6.5%);
   box-shadow:
     inset 14px 14px 54px #cfcece,
     inset -14px -14px 54px #f7f3fa,
