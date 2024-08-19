@@ -237,10 +237,10 @@ textarea:focus {
   @apply px-4;
 
   background: hsl(208, 50%, 50%, 6.5%);
-  box-shadow:
+/*   box-shadow:
     inset 14px 14px 54px #cfcece,
     inset -14px -14px 54px #f7f3fa,
-    3px 3px 10px #bdbcbc;
+    3px 3px 10px #bdbcbc; */
     
 }
 
