@@ -99,33 +99,7 @@ li {
   transition: all 0.3s ease-in-out;
 }
 
-/* .nav-item:hover a::before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  margin-top: 0.25rem;
-  background: #7b00ff;
-  transition: all 0.3s ease-in-out;
-  border-radius: 50px;
-} */
 
-/* .small-nav .nav-item:hover a::before {
-  content: "";
-  position: absolute;
-  font-size: 8px;
-  bottom: -1.65rem;
-  left: -1.5rem;
-  width: 3rem;
-  height: 8px;
-  margin-top: 0.25rem;
-  background: #420088;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  z-index: -1;
-} */
 .small-nav .nav-item a.active::before {
   content: "";
   position: absolute;
@@ -219,7 +193,7 @@ textarea:focus {
 .dark .input-field {
   width: 100%;
   max-width: 500px;
-  @apply rounded-md;
+  @apply rounded-lg;
   @apply mx-auto;
   @apply py-2;
   @apply px-4;
@@ -232,7 +206,7 @@ textarea:focus {
   width: 100%;
   max-width: 500px;
   @apply mx-auto;
-  @apply rounded-md;
+  @apply rounded-lg;
   @apply py-2;
   @apply px-4;
 
