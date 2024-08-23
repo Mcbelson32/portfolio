@@ -85,7 +85,7 @@ const Footer = () => {
         <div className="max-md:w-full flex justify-center items-center gap-x-6 text-2xl my-6">
           <a href="mailto:mcwelson92@gmail.com" target="blank"><BiMailSend /></a>
           <a href="https://wa.me/251904537541" target="blank"><FaWhatsapp /></a>
-          <a href="https://www.linkedin.com/in/makbel-hailu-bab1571a2" target="blank"><FiLinkedin /></a>
+          <a href="https://www.linkedin.com/in/makbel-hailu" target="blank"><FiLinkedin /></a>
         </div>
       </div>
       <hr className="w-[90%] mx-auto bg-primary  " />
