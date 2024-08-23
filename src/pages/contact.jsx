@@ -71,7 +71,7 @@ const Contact = ({width}) => {
           <FiLinkedin className="text-3xl mb-3"/>
               <h3 className="text-sm">LinkedIn</h3>
               <p className="text-xs opacity-75 font-semibold">Makbel Hailu</p>
-              <a href="https://www.linkedin.com/in/makbel-hailu-bab1571a2" target="blank" className="text-xs opacity-75 font-semibold mt-4 w-full flex text-center justify-center items-center">Write me <TiArrowRight /></a>
+              <a href="https://www.linkedin.com/in/makbel-hailu" target="blank" className="text-xs opacity-75 font-semibold mt-4 w-full flex text-center justify-center items-center">Write me <TiArrowRight /></a>
           </div>
         </div>
         <div data-aos={width > 1024 ? "fade-left" : "fade-up"} className="form-card2 lg:px-5">
