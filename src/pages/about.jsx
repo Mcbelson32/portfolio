@@ -26,7 +26,7 @@ const About = () => {
         <div className="img flex-1">
           <LazyLoad height={200} offset={100}>
             <img
-              data-aos="fade-in"
+              data-aos="zoom-in"
               className="h-auto w-[400px] rounded-bl-[10px] rounded-br-[40%] rounded-tl-[40%] rounded-tr-[10px] "
               src={theme ? aboutImgDark : aboutImgLight}
               alt="programming about image"
