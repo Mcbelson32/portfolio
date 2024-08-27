@@ -33,14 +33,13 @@ const Header = () => {
        "(prefers-color-scheme: dark)"
      ).matches;
      */
-   if (userTheme) {
       if (userTheme === "dark") {
       document.documentElement.classList.add("dark");
       dispatch(changeTheme(true));
     } else {
       dispatch(changeTheme(false));
     }
-   }
+  
     window.addEventListener("scroll", handleScroll);
 
     return () => {
