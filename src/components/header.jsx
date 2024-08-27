@@ -27,16 +27,19 @@ const Header = () => {
 
   useEffect(() => {
     const userTheme = localStorage.getItem("theme");
-    const systemTheme = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-
-    if (userTheme === "dark") {
+    
+    // to query the system theme but i found it not relevant
+    /* const systemTheme = window.matchMedia(
+       "(prefers-color-scheme: dark)"
+     ).matches;
+     */
+      if (userTheme === "dark") {
       document.documentElement.classList.add("dark");
       dispatch(changeTheme(true));
     } else {
       dispatch(changeTheme(false));
     }
+  
     window.addEventListener("scroll", handleScroll);
 
     return () => {

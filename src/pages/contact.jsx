@@ -15,9 +15,12 @@ const Contact = ({width}) => {
   const [email, setEmail] = useState("")
   const [subject, setSubject] = useState("")
   const [message, setMessage] = useState("")
+  const [isSending, setIsSending] = useState(false)
 
   const handleForm = (e) => {
+    setIsSending(true)
     e.preventDefault()
+    
 
     const tempParams = {
       from_name: name,
@@ -34,6 +37,7 @@ const Contact = ({width}) => {
         setEmail("")
         setSubject("")
         setMessage("")
+        setIsSending(false)
       }).catch((err) => {
         console.error("Error Sending Email", err)
         alert("Error Sending Email")
@@ -41,7 +45,7 @@ const Contact = ({width}) => {
   }
   return (
     <section
-      className="container max-md:pr-0 max-md:pl-0 h-auto xl:h-screen w-full py-20 2xl:py-32 dark:text-light"
+      className="container max-md:pr-0 max-md:pl-0 h-auto xl:h-screen w-full py-20 2xl:py-32 mb-8 dark:text-light"
       id="contact"
     >
       <h2 data-aos="fade-up" className="text-center text-3xl font-bold">
@@ -67,7 +71,7 @@ const Contact = ({width}) => {
           <FiLinkedin className="text-3xl mb-3"/>
               <h3 className="text-sm">LinkedIn</h3>
               <p className="text-xs opacity-75 font-semibold">Makbel Hailu</p>
-              <a href="https://www.linkedin.com/in/makbel-hailu-bab1571a2" target="blank" className="text-xs opacity-75 font-semibold mt-4 w-full flex text-center justify-center items-center">Write me <TiArrowRight /></a>
+              <a href="https://www.linkedin.com/in/makbel-hailu" target="blank" className="text-xs opacity-75 font-semibold mt-4 w-full flex text-center justify-center items-center">Write me <TiArrowRight /></a>
           </div>
         </div>
         <div data-aos={width > 1024 ? "fade-left" : "fade-up"} className="form-card2 lg:px-5">
@@ -130,7 +134,7 @@ const Contact = ({width}) => {
               ></textarea>
             </div>
 
-            <button className="w-full max-w-[500px] btn bg-purple text-white border-0 dark:border-white hover:bg-secondary dark:hover:border-2">
+            <button className="w-full max-w-[500px] btn bg-purple text-white border-0 dark:border-white hover:bg-secondary dark:hover:border-2" disabled={isSending}>
               Send Message
             </button>
           </form>
