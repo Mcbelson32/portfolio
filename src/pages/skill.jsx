@@ -29,11 +29,11 @@ const Skills = ({width}) => {
           </div>
           <div className="skill w-full">
             <h3 className=" text-start text-lg font-semibold">JavaScript</h3>
-            <SkillBar percentage={85} />
+            <SkillBar percentage={88} />
           </div>
           <div className="skill w-full">
             <h3 className="text-start text-lg font-semibold">React</h3>
-            <SkillBar percentage={75} />
+            <SkillBar percentage={85} />
           </div>
           <div className="skill w-full">
             <h3 className="text-start text-lg font-semibold">Git & GitHub</h3>
@@ -61,7 +61,7 @@ const Skills = ({width}) => {
             <h3 className="text-start text-lg font-semibold">
               ExpressJS / Django
             </h3>
-            <SkillBar percentage={70} />
+            <SkillBar percentage={75} />
           </div>
         </div>
       </div>

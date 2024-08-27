@@ -68,7 +68,6 @@ const Header = () => {
         <ul className="flex w-full items-center gap-x-10  text-sm lg:gap-x-14 lg:text-base">
           <li className="nav-item">
             <Link
-              active="false"
               to="home"
               activeClass="active"
               spy={true}
@@ -81,7 +80,6 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
-              active="false"
               activeClass="active"
               spy={true}
               offset={-80}
@@ -94,7 +92,6 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
-            active="false"
               activeClass="active"
               spy={true}
               offset={-80}
@@ -107,7 +104,6 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
-            active="false"
               activeClass="active"
               spy={true}
               offset={-80}
@@ -120,10 +116,9 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
-              active="false"
               activeClass="active"
               spy={true}
-              offset={-80}
+              offset={20}
               smooth={true}
               duration={500}
               to="contact"
