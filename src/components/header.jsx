@@ -33,15 +33,17 @@ const Header = () => {
        "(prefers-color-scheme: dark)"
      ).matches;
      */
-      if (userTheme === "dark") {
-      document.documentElement.classList.add("dark");
-      dispatch(changeTheme(true));
-    } else {
-      dispatch(changeTheme(false));
-    }
+    
+      
+      if (userTheme === 'light') {
+        document.documentElement.classList.remove("dark");
+        dispatch(changeTheme(false));
+      }
+    
   
     window.addEventListener("scroll", handleScroll);
 
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -54,7 +56,7 @@ const Header = () => {
     >
       <div className="logo">
         <Link
-          active="true"
+          active={"true"}
           activeClass="active"
           spy={true}
           offset={-100}
@@ -151,7 +153,7 @@ const Header = () => {
 
           {/* moon icon */}
           <svg
-            className={`swap-off h-7 w-7 fill-current  2xl:text-dark ${isScrolled > 560 ? "md:text-dark" : "md:text-light"}`}
+            className={`swap-off h-7 w-7 fill-current   ${isScrolled > 560 ? "md:text-dark dark:text-light" : "md:text-light"}`}
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
